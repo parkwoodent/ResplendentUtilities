@@ -105,7 +105,10 @@
 {
     if (_keyboardHelper.keyboardTop)
     {
-        UIView* relativeView = [UIApplication sharedApplication].keyWindow;
+        UIView* relativeView = self;
+        while (relativeView.superview != nil) {
+            relativeView = relativeView.superview
+        }
         CGRect frameInWindow = [self.superview convertRect:self.frame toView:relativeView];
         CGFloat bottom = CGRectGetMaxY(frameInWindow);
         CGFloat yOffset = CGRectGetHeight(relativeView.frame) - bottom;
