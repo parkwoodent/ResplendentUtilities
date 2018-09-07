@@ -107,7 +107,7 @@
     {
         UIView* relativeView = self;
         while (relativeView.superview != nil) {
-            relativeView = relativeView.superview
+            relativeView = relativeView.superview;
         }
         CGRect frameInWindow = [self.superview convertRect:self.frame toView:relativeView];
         CGFloat bottom = CGRectGetMaxY(frameInWindow);
