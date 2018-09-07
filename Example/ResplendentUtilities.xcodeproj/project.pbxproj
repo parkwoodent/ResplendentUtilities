@@ -268,7 +268,6 @@
 				D793CEDA1D0785F000047A87 /* Frameworks */,
 				D793CEDB1D0785F000047A87 /* Resources */,
 				57CE19F08620CEC75544C573 /* [CP] Embed Pods Frameworks */,
-				71E8CE272A59B340E7D9CA94 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -367,21 +366,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ResplendentUtilities/Pods-ResplendentUtilities-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		71E8CE272A59B340E7D9CA94 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ResplendentUtilities/Pods-ResplendentUtilities-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */

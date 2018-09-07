@@ -113,17 +113,18 @@ CGFloat const kRUSlideMenuNavigationController_MENU_SLIDE_ANIMATION_DURATION = .
 - (void)moveHorizontallyToLocation:(CGFloat)location
 {
 	CGRect rect = self.view.frame;
-	UIInterfaceOrientation const orientation = [[UIApplication sharedApplication] statusBarOrientation];
+	UIDeviceOrientation const orientation = [UIDevice currentDevice].orientation;
+    
 	RUSlideNavigationController_MenuType menu = [self menuTypeForHorizontalLocation:location];
 	
-	if (UIInterfaceOrientationIsLandscape(orientation))
+	if (UIDeviceOrientationIsLandscape(orientation))
 	{
 		rect.origin.x = 0;
-		rect.origin.y = (orientation == UIInterfaceOrientationLandscapeRight) ? location : location*-1;
+		rect.origin.y = (orientation == UIDeviceOrientationLandscapeRight) ? location : location*-1;
 	}
 	else
 	{
-		rect.origin.x = (orientation == UIInterfaceOrientationPortrait) ? location : location*-1;
+		rect.origin.x = (orientation == UIDeviceOrientationPortrait) ? location : location*-1;
 		rect.origin.y = 0;
 	}
 	
@@ -319,17 +320,17 @@ CGFloat const kRUSlideMenuNavigationController_MENU_SLIDE_ANIMATION_DURATION = .
 - (CGFloat)horizontalViewLocation
 {
 	CGRect rect = self.view.frame;
-	UIInterfaceOrientation const orientation = [[UIApplication sharedApplication] statusBarOrientation];
+	UIDeviceOrientation const orientation = [UIDevice currentDevice].orientation;
 
-	if (UIInterfaceOrientationIsLandscape(orientation))
+	if (UIDeviceOrientationIsLandscape(orientation))
 	{
-		return (orientation == UIInterfaceOrientationLandscapeRight)
+		return (orientation == UIDeviceOrientationLandscapeRight)
 		? rect.origin.y
 		: rect.origin.y*-1;
 	}
 	else
 	{
-		return (orientation == UIInterfaceOrientationPortrait)
+		return (orientation == UIDeviceOrientationPortrait)
 		? rect.origin.x
 		: rect.origin.x*-1;
 	}
@@ -389,26 +390,26 @@ CGFloat const kRUSlideMenuNavigationController_MENU_SLIDE_ANIMATION_DURATION = .
 		yOffset += statusBarHeight;
 	}
 
-	UIInterfaceOrientation const interfaceOrientation = [[UIApplication sharedApplication] statusBarOrientation];
-	if (UIInterfaceOrientationIsLandscape(interfaceOrientation))
+	UIDeviceOrientation const orientation = [UIDevice currentDevice].orientation;
+	if (UIDeviceOrientationIsLandscape(orientation))
 	{
-		rect.origin.x = (interfaceOrientation == UIInterfaceOrientationLandscapeRight) ? 0 : yOffset;
+		rect.origin.x = (orientation == UIDeviceOrientationLandscapeRight) ? 0 : yOffset;
 		rect.size.width = self.view.frame.size.width-yOffset;
 //		if (!isIos7)
 //		{
 //			// For some reasons in landscape belos the status bar is considered y=0, but in portrait it's considered y=20
-//			rect.origin.x = (self.interfaceOrientation == UIInterfaceOrientationLandscapeRight) ? 0 : statusBarHeight;
+//			rect.origin.x = (self.interfaceOrientation == UIDeviceOrientationLandscapeRight) ? 0 : statusBarHeight;
 //			rect.size.width = self.view.frame.size.width-statusBarHeight;
 //		}
 	}
 	else
 	{
-		rect.origin.y = (interfaceOrientation == UIInterfaceOrientationPortrait) ? yOffset : 0;
+		rect.origin.y = (orientation == UIDeviceOrientationPortrait) ? yOffset : 0;
 		rect.size.height = self.view.frame.size.height-yOffset;
 //		if (!isIos7)
 //		{
 //			// For some reasons in landscape belos the status bar is considered y=0, but in portrait it's considered y=20
-//			rect.origin.y = (self.interfaceOrientation == UIInterfaceOrientationPortrait) ? statusBarHeight : 0;
+//			rect.origin.y = (self.interfaceOrientation == UIDeviceOrientationPortrait) ? statusBarHeight : 0;
 //			rect.size.height = self.view.frame.size.height-statusBarHeight;
 //		}
 	}
@@ -426,9 +427,9 @@ CGFloat const kRUSlideMenuNavigationController_MENU_SLIDE_ANIMATION_DURATION = .
 - (CGFloat)horizontalSize
 {
 	CGRect rect = self.view.frame;
-	UIInterfaceOrientation const orientation = [[UIApplication sharedApplication] statusBarOrientation];
+	UIDeviceOrientation const orientation = [UIDevice currentDevice].orientation;
 	
-	if (UIInterfaceOrientationIsLandscape(orientation))
+	if (UIDeviceOrientationIsLandscape(orientation))
 	{
 		return rect.size.height;
 	}
@@ -460,9 +461,9 @@ CGFloat const kRUSlideMenuNavigationController_MENU_SLIDE_ANIMATION_DURATION = .
 
 - (CGFloat)slideOffset
 {
-	UIInterfaceOrientation const interfaceOrientation = [[UIApplication sharedApplication] statusBarOrientation];
+	UIDeviceOrientation const orientation = [UIDevice currentDevice].orientation;
 
-	return (UIInterfaceOrientationIsLandscape(interfaceOrientation))
+	return (UIDeviceOrientationIsLandscape(orientation))
 	? self.landscapeSlideOffset
 	: self.portraitSlideOffset;
 }

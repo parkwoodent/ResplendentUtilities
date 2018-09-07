@@ -7,9 +7,13 @@ DEPENDENCIES:
   - ResplendentUtilities (from `../`)
   - RTSMTableSectionManager (= 0.1.10)
 
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - RTSMTableSectionManager
+
 EXTERNAL SOURCES:
   ResplendentUtilities:
-    :path: ../
+    :path: "../"
 
 SPEC CHECKSUMS:
   ResplendentUtilities: 39f38dfc97981ba937b0dfc4145550c3b34ec6d4
@@ -17,4 +21,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: 4a802021d916cc6042d5dcd7ebe79ab0cb3810ce
 
-COCOAPODS: 1.4.0
+COCOAPODS: 1.5.3

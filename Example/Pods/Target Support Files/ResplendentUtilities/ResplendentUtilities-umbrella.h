@@ -39,7 +39,7 @@
 #import "NSURL+RUDirectories.h"
 #import "NSURL+RUQueryParams.h"
 #import "UIActionSheet+RUShowUtil.h"
-#import "UIAlertView+RUShowUtil.h"
+#import "UIAlertViewUtils.h"
 #import "NSObject+RUNotifications_UIApplication.h"
 #import "UIApplication+RUOpenUrl.h"
 #import "UIApplication+RUPushNotifications.h"
