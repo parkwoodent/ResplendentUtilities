@@ -74,7 +74,7 @@
 #pragma mark - Keyboard Top
 +(CGFloat)keyboardTopFromKeyboardEndFrame:(CGRect)keyboardEndFrame
 {
-    return UIInterfaceOrientationIsLandscape([UIApplication sharedApplication].statusBarOrientation) ? CGRectGetWidth(keyboardEndFrame) : CGRectGetHeight(keyboardEndFrame);
+    return UIDeviceOrientationIsLandscape([UIDevice currentDevice].orientation) ? CGRectGetWidth(keyboardEndFrame) : CGRectGetHeight(keyboardEndFrame);
 }
 
 @end
