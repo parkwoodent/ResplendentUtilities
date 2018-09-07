@@ -31,7 +31,7 @@
 		A7A7E9C9E51982F74B15CF7F /* Pods-ResplendentUtilities.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ResplendentUtilities.release.xcconfig"; path = "Pods/Target Support Files/Pods-ResplendentUtilities/Pods-ResplendentUtilities.release.xcconfig"; sourceTree = "<group>"; };
 		D72DBE111D087E97004DD4D7 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		D72DBE121D087E97004DD4D7 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		D72DBE131D087E97004DD4D7 /* ResplendentUtilities.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = ResplendentUtilities.podspec; path = ../ResplendentUtilities.podspec; sourceTree = "<group>"; };
+		D72DBE131D087E97004DD4D7 /* ResplendentUtilities.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = ResplendentUtilities.podspec; path = ../ResplendentUtilities.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		D73BB6E11E3F9CE400F6BFA4 /* RUUnitTest__RUNotifications.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RUUnitTest__RUNotifications.h; sourceTree = "<group>"; };
 		D73BB6E21E3F9CE400F6BFA4 /* RUUnitTest__RUNotifications.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RUUnitTest__RUNotifications.m; sourceTree = "<group>"; };
 		D73BB6E41E3F9CF600F6BFA4 /* RUUnitTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RUUnitTest.h; sourceTree = "<group>"; };
@@ -291,7 +291,7 @@
 				TargetAttributes = {
 					D793CEDC1D0785F000047A87 = {
 						CreatedOnToolsVersion = 7.3;
-						DevelopmentTeam = AAB4VMM3YL;
+						DevelopmentTeam = B2Y45JSHHK;
 					};
 				};
 			};
@@ -523,7 +523,7 @@
 			baseConfigurationReference = 52FC15B44B409A8EA1263685 /* Pods-ResplendentUtilities.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = AAB4VMM3YL;
+				DEVELOPMENT_TEAM = B2Y45JSHHK;
 				INFOPLIST_FILE = ResplendentUtilities/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -537,7 +537,7 @@
 			baseConfigurationReference = A7A7E9C9E51982F74B15CF7F /* Pods-ResplendentUtilities.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = AAB4VMM3YL;
+				DEVELOPMENT_TEAM = B2Y45JSHHK;
 				INFOPLIST_FILE = ResplendentUtilities/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
