@@ -179,8 +179,6 @@ CGFloat const kRUFullscreenRotatingViewDefaultRotationAnimationDuration = 0.25;
     [_shadowView setAlpha:0.0f];
 
     [self layoutIfNeeded];
-
-    [[UIApplication sharedApplication] setStatusBarHidden:YES withAnimation:UIStatusBarAnimationFade];
 }
 
 -(void)performShowAnimation
@@ -229,8 +227,6 @@ CGFloat const kRUFullscreenRotatingViewDefaultRotationAnimationDuration = 0.25;
         [self setOrientationNotificationsEnabled:NO];
 
         [self.hideDelegate fullscreenRotatingView:self willHide:animated];
-
-        [[UIApplication sharedApplication] setStatusBarHidden:NO withAnimation:UIStatusBarAnimationNone];
 
         if (animated)
         {
